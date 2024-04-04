@@ -1,0 +1,230 @@
+/*RGB BORDER*/
+*,
+*:before
+*:after{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the body */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header/logo Title */
+  .header {
+    padding: 40px;
+    text-align: center;
+    background-image: url(https://64.media.tumblr.com/c3e2da7367ed718b4ef628a244cd9129/tumblr_p4o3bnVtto1qeyvpto1_500.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(216, 216, 216);
+  }
+  #creator{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-color:#43008d ;
+  border-style: solid;
+  border-width: 5px;
+
+  }
+  /* Increase the font size of the heading */
+  .header h1 {
+    font-size: 40px;
+  }
+  
+  /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+  .navbar {
+    overflow: hidden;
+    background-color: #352b52;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    float: left;
+    display: block;
+    color: rgb(216, 216, 216);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  
+  /* Right-aligned link */
+  .navbar a.right {
+    float: right;
+  }
+  
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: rgb(73, 54, 100);
+    color: black;
+  }
+  
+  /* Active/current link */
+  .navbar a.active {
+    background-color: #695488;
+    color: white;
+  }
+  
+  /* Column container */
+  .row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #221b2c;
+    padding: 20px;
+  }
+  
+  /* Main column */
+  .main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: rgb(23, 15, 31);
+    padding: 20px;
+  }
+  
+  /* Fake image, just for this example */
+  .fakeimg {
+    width: 100%;
+    padding: 20px;
+    
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 2px;
+    text-align: center;
+    background:#352b52
+  }
+
+  /*title's color*/
+  
+  h2{
+    color:rgb(154, 130, 197);
+    text-align: center;
+  }
+
+  /* "other games" title*/
+  h3{
+    font-family: monospace, lucida;
+    text-align: center;
+    color: #9a53c9;
+  }
+/* smaller texts*/
+p{
+
+  text-align: center;
+  color: #695488;
+}
+/*yeah... idk*/
+h5{
+  text-align: center;
+  color: #9a82c5;
+}
+/* the bear ori image*/
+  .img1{
+    border-color:#43008d ;
+    border-style: solid;
+    border-width: 5px;
+    width: 450px;
+    height: 280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* The unity plataform image*/
+#unity{
+  width: 900px;;
+  height: 500px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 72%;
+  left: 64%;
+  border-radius: 10px;
+  overflow: hidden;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#unity:before{
+  content: "";
+  height: 1500px;
+  width: 2000px;
+  position: absolute;
+  background: conic-gradient(
+    #bf00ff,
+    #a100e2,
+    #8200c5,
+    #6300a9,
+    #43008d,
+    #230073,
+    #000059,
+    #000540,
+    #000329,
+    #000113,
+    #000113,   
+    #000329,
+    #000540,
+    #000059,
+    #43008d,
+    #6300a9,
+    #8200c5,
+    #a100e2,
+    #bf00ff
+  );
+left: -60%;
+top: -100%;
+animation: spin 2.5s infinite linear;
+}
+@keyframes spin{
+100%{
+  transform:rotate(-360deg)
+}
+}
+#unity:after{
+  content: url(unity_resized.jpg);
+  position: absolute;
+  border-radius: 5px;
+  height: 550px;
+  width: 96%;
+  top: 5%;
+  left: 3%;
+}
+
+a{
+  text-decoration: none;
+  color:#9a82c5;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+}
+
+h2 {
+  font-family: myFirstFont;
+}
+
+::-webkit-scrollbar{
+  width: 0.2px;
+}

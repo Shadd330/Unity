@@ -1,0 +1,60 @@
+
+  body {
+    margin: auto;
+    width: 640px; 
+    padding: 50px;
+    font-family: 'Arial', sans-serif; 
+    background-color: black;
+    background-image: url(https://64.media.tumblr.com/e8e387d7b425dc7ded53bd18ad9c9104/tumblr_nnlk53SMoy1rnvja7o1_1280.gif);
+    background-repeat: no-repeat;  
+    background-position: 50%;
+   
+  }
+  
+  /* Centered Image Code */
+  
+   .center {
+    width: 555px;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+    overflow: hidden;
+    background-color: #352b52;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    float: left;
+    display: block;
+    color: rgb(216, 216, 216);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  
+  /* Right-aligned link */
+  .navbar a.right {
+    float: right;
+  }
+  
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: rgb(73, 54, 100);
+    color: black;
+  }
+  
+  /* Active/current link */
+  .navbar a.active {
+    background-color: #695488;
+    color: white;
+  }
